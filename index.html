@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+  <div class="container-fluid d-flex justify-content-center align-items-center vh-100">
+    <div class="calculator card w-75 w-md-50 w-lg-33">
+      <div class="card-body d-flex flex-column">
+        <h3 class="card-title text-center">Calculator</h3>
+        <input type="text" class="form-control mb-3 text-right flex-grow-1 d-flex align-items-center justify-content-end" id="result" disabled>
+        <div class="button-container flex-grow-2">
+          <button class="btn btn-secondary" onclick="clearScreen()">C</button>
+          <button class="btn btn-secondary" onclick="display('/')">/</button>
+          <button class="btn btn-secondary" onclick="display('*')">*</button>
+          <button class="btn btn-secondary" onclick="display('-')">-</button>
+          <button class="btn btn-secondary" onclick="display('7')">7</button>
+          <button class="btn btn-secondary" onclick="display('8')">8</button>
+          <button class="btn btn-secondary" onclick="display('9')">9</button>
+          <button class="btn btn-secondary" onclick="display('+')">+</button>
+          <button class="btn btn-secondary" onclick="display('4')">4</button>
+          <button class="btn btn-secondary" onclick="display('5')">5</button>
+          <button class="btn btn-secondary" onclick="display('6')">6</button>
+          <button class="btn btn-secondary" onclick="display('1')">1</button>
+          <button class="btn btn-secondary" onclick="display('2')">2</button>
+          <button class="btn btn-secondary" onclick="display('3')">3</button>
+          <button class="btn btn-secondary" onclick="calculate()">=</button>
+          <button class="btn btn-secondary" onclick="display('0')">0</button>
+          <button class="btn btn-secondary" onclick="display('.')">.</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <script src="./script.js"></script>
+</body>
+</html>
+
